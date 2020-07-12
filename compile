@@ -1,0 +1,6 @@
+g++ -c -I./ -o bin/main.o src/main.cpp
+g++ -c -I./ -o bin/Board.o src/Board.cpp
+g++ -c -I./ -o bin/Pawn.o src/Pawn.cpp
+g++ -c -I./ -o bin/Tile.o src/Tile.cpp
+g++ -c -I./ -o bin/Player.o src/Player.cpp
+g++ -o main bin/main.o bin/Board.o bin/Tile.o bin/Pawn.o bin/Player.o  -lsfml-graphics -lsfml-window -lsfml-system
